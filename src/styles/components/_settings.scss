@@ -1,0 +1,66 @@
+.active {
+  background-color: #eceef4 !important;
+}
+
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+
+  &-target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    &:hover {
+      background-color: #f3f5f7;
+    }
+  }
+
+
+  &-inner {
+    width: 216px;
+    background: $labelBg;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(black, .1);
+    border: 1px solid $tooltipBorder;
+
+
+    &_header {
+      border-bottom: 1px solid $tooltipBorder;
+      margin: 0;
+
+      span {
+        padding: 10px 16px;
+        display: block;
+      }
+    }
+
+    &_content {
+      padding: 5px 16px 10px 16px;
+
+      &_input {
+        padding: 5px 0;
+      }
+    }
+  }
+
+  &[x-placement^="bottom"] {
+    .tooltip-arrow {
+      background-color: $labelBg;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: -8px;
+      transform: rotate(-45deg);
+      border-top: 1px solid $tooltipBorder;
+      border-right: 1px solid $tooltipBorder;
+    }
+  }
+}

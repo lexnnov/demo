@@ -1,0 +1,12 @@
+@import "setup/colors";
+@import "setup/typography";
+@import "setup/redefinition";
+
+@import "components/count";
+@import "components/settings";
+
+@import "views/tools";
+@import "views/main";
+
+@import "../../node_modules/vuetify/dist/vuetify.min";
+
