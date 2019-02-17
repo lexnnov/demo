@@ -1,20 +1,20 @@
 <template>
-    <v-app>
-        <Tools/>
-    </v-app>
+  <v-app>
+    <Tools />
+  </v-app>
 </template>
 
 <script>
-	import Tools from '../Tools/Tools';
+  import Tools from '../Tools/Tools';
 
-	export default {
-		name: 'Main',
-		components: {
-					Tools,
-		}
-	};
+  export default {
+    name: 'Main',
+    components: {
+      Tools,
+    }
+  };
 </script>
 
 <style lang="scss">
-    @import "../../styles/global";
+  @import "../../styles/global";
 </style>
