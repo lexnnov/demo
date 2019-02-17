@@ -40,7 +40,6 @@
             label="VOTES per user"
             placeholder="Placeholder"
           ></v-text-field>
-
         </v-flex>
 
       </div>
