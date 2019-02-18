@@ -17,6 +17,7 @@
         <Input :active="isActive" idInput="duration" label="duration"/>
         <Input idInput="minVotes" label="Min. votes to pass"/>
         <Input idInput="votes" label="VOTES per user"/>
+
       </div>
     </template>
   </v-popover>
