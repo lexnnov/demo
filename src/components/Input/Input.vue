@@ -19,20 +19,16 @@
       };
     },
     watch: {
-      active: function(one) {
-        if(one){
-
+      active: function(active) {
+        if(active){
           setTimeout(()=>{
             this.$refs.duration.focus();
             this.isActive = true
           },50)
         }
-
-
       }
     },
     methods: {
-
       isNumber(){
         return this.inputValue = this.inputValue.replace(/[^\d.]/g, '')
       },
@@ -43,7 +39,6 @@
       unFocus() {
         this.isActive = false
       }
-
     }
   };
 </script>
